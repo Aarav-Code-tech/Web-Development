@@ -1,0 +1,20 @@
+h6{
+    font-size:11px;
+    text-align:justify;
+}
+h1,h2{
+    background-color: aquamarine;
+}
+#p{
+    color : blue;
+}
+#q{
+    color : rgb(242, 114, 9);
+}
+.a{
+    color : rgb(242, 9, 19);
+}
+*{
+    background-color: beige;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
