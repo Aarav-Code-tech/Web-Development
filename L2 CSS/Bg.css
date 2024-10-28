@@ -1,0 +1,7 @@
+body{
+    background-color: rgb(34, 0, 255);
+    background-image: url("https://www.thelabradorsite.com/wp-content/uploads/2018/07/small-beagle.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
