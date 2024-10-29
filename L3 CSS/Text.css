@@ -1,0 +1,31 @@
+#p{
+    color: blue;
+    font-family:cursive;
+    text-decoration:line-through;
+    text-transform:uppercase;
+}
+#q{
+    color:rgb(30, 255, 0);
+    font-family:cursive;
+    text-decoration:underline overline line-through ;
+    text-transform:capitalize; 
+}
+#r{
+    color: rgb(255, 0, 0);
+    font-family:cursive;
+    text-decoration:underline;
+    text-transform:uppercase;
+}
+#body{
+    background-image: radial-gradient(aqua,crimson);
+}
+#x{
+    box-shadow: 1px 3px 7px red;
+}
+#y{
+    text-shadow: 2px 5px 2px rgb(255, 0, 0);
+}
+#z{
+    text-indent: 5.6em;
+}
+
