@@ -1,0 +1,32 @@
+.a{
+    width:300px;
+    margin: 15px;
+    padding: 15px;
+    border: 5px ridge goldenrod;
+    background-color: black;
+    color: goldenrod;
+    border-radius: 5ch;
+    float: left;
+}
+.b{
+    width:300px;
+    margin: 15px;
+    padding: 15px;
+    border: 5px ridge goldenrod;
+    background-color: black;
+    color: goldenrod;
+    border-radius: 5ch;
+    float: left;
+}
+img{
+    width: 250px;
+    border: 0.5ch dashed ;
+    border-radius: 35px;
+    margin-left: 19px;
+}
+p{
+    text-align: justify;
+}
+h1{
+    text-align: center;
+}
