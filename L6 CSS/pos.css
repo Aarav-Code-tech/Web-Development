@@ -1,0 +1,39 @@
+#F{
+    position: fixed;
+    width: 200px;
+    left : 200px;
+    top: 6ch;
+    border : 0.4ch solid black;
+}
+#s{
+    position: static;
+    width: 200px;
+    left : 200px;
+    background-color: royalblue;
+}
+#st{
+    position: sticky;
+    width: 200px;
+    left : 200px;
+    top: 10px;
+    border: 0.16cm dashed;
+    border-radius: 1ch;
+
+}
+#r{
+    position: relative;
+  top : 200px;  
+  border: 0.19cm solid;
+  width: 100px;
+  left: 30px;
+}
+#a{
+    position: absolute;
+    left : 30px;
+    top :40px;
+    box-shadow: 4px 2px 4px darkgreen;
+
+}
+body{
+    background-color: goldenrod;
+}
