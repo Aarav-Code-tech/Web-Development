@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope of Variables</title>
+</head>
+<body>
+    <h1  id = "a"></h1>
+    <h1  id = "b"></h1>
+    <h1  id = "c"></h1>
+    <script>
+        var a = 12;
+        function fun(){
+            var b=13;
+            var c = a*b;
+            document.getElementById("a").innerHTML=c
+        }
+        fun();
+        document.getElementById("b").innerHTML=a;
+        document.getElementById("c").innerHTML=b
+    </script>
+    
+</body>
+</html>
