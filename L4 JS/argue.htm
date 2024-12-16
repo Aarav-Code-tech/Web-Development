@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arguements</title>
+</head>
+<body>
+    <script>
+        
+        function fun(){
+            var i;
+            var max = 0;
+            for (i=0;i<arguments.length;i++){
+                if(arguments[i]>max){
+                    max = arguments[i]
+                }
+
+            }
+            return max
+        }
+        
+        document.write(fun(45670,569710,60910))
+
+    </script>
+    
+</body>
+</html>
