@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Stack</title>
+</head>
+<body>
+    <script>
+        function fun(a,b){
+            return a+b
+        }
+        function fun2(a,b){
+            return fun(a,b)/2
+        }
+        document.write(fun2(7,8))
+    </script>
+</body>
+</html>
