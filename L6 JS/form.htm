@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Detail Form</title>
+</head>
+<body>
+    <form id = "form" onsubmit = "validate(event)">
+        <fieldset>
+        <legend><h1>Detail Form</h1></legend>
+        
+        <label>Email : </label><br>
+        <input id = "email"  name = "email" type = "email"><br>
+        <label>Password : </label><br>
+        <input id = "password"  name = "password" minlength = "8" maxlength="16"type = "password"><br>
+        <label >Age :</label><br>
+        <input id = "age" name = "age" type = "number" min="6" max="120"><br>
+        <button>Submit</button>
+        
+
+    
+        </form>
+    <div id = "message"></div>
+    <script src = "form.js"></script>
+</body>
+</html>
