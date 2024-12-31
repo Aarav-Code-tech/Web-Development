@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+</head>
+<body>
+    <script>
+        class Nothing{
+            constructor(name,year){
+                this.name = name;
+                this.year = year;
+            }
+            age(){
+                var date = new Date();
+                return date.getFullYear()-this.year;
+            }
+            
+        }
+        var b = prompt("name : ");
+        var a = parseInt(prompt("year-of-birth : "));
+        obj = new Nothing(b,a);
+        document.write(obj.age());
+    </script>
+    
+</body>
+</html>
