@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting</title>
+</head>
+<body>
+    <button onclick="asc()">Ascending Order</button>
+    <button onclick="dec()">Descending Order</button>
+    <script>
+        var a = [10,9,2389,298,1089]
+        function asc(){
+            a.sort(function(a,b){return a-b});
+            document.write(a)
+        }
+        function dec(){
+            a.sort(function(a,b){return b-a});
+            document.write(a)
+        }
+    </script>
+    
+</body>
+</html>
