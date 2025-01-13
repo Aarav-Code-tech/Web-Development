@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+<body>
+    <script>
+        function fun1(a){
+            document.write(a)
+        }
+        function fun2(a,b){
+            var sum = a+b;
+            fun1(sum)
+        }
+        var e = new Promise(function(myresolve,myreject){
+            let x = 0;
+            if (x==0) {
+                myresolve("ok")
+
+            }
+            else{
+                myreject("error")
+            }
+
+        });
+        e.then(
+            function(value){
+                fun2(3,9);
+            },
+            function(error){
+                fun2(error);
+            }
+        );
+    </script>
+    
+</body>
+</html>
