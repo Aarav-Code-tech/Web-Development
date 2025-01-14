@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check</title>
+</head>
+<body>
+    <input id="a" type="number" min="1" max="20">
+    <button onclick = "fun()">Click</button>
+    <script>
+        function fun(){
+            var a = document.getElementById("a");
+            if(!a.checkValidity()){
+                document.write(a.validationMessage);
+            }
+            else{
+                document.write("correct")
+            }
+        }
+    </script>
+    
+</body>
+</html>
