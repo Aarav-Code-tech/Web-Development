@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area calculator</title>
+</head>
+<body>
+    <h1>Area Calculator</h1>
+    <script>
+        var choice = prompt("Calculate the area of(press 1,2,3 or 4)-\n1.Triangle\n2.Square\n3.Rectangle\n4.Parallelogram")
+        if (choice=="1"){
+            var base = Number(prompt("Base : "));
+            var height = Number(prompt("Height : "));
+            alert(base*height*0.5)
+        }
+        else if (choice == "2"){
+            var side = Number(prompt("Side : "))
+            alert(side**2)
+        }
+        else if (choice == "3"){
+            var length = Number(prompt("Length : "))
+            var breadth = Number(prompt("Breadth : "))
+            alert(length*breadth)
+        }
+        else {
+            var base = Number(prompt("Base : "));
+            var height = Number(prompt("Height : "));
+            alert(base*height)
+        }
+    </script>
+</body>
+</html>
