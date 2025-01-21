@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+</head>
+<body>
+    <h1>
+        Palindrome or not
+    </h1>
+    <script>
+        function fun(str){
+            var inp = str.replace(/[^A-Z0-9]/ig,"").toLowerCase();
+            var res = inp.split("").reverse().join("")
+            if (inp===res){
+                alert("Its a palindrome")
+            }
+            else{
+                alert("Its NOT a palindrome")
+            }
+        }
+        var a = prompt('enter a word to check - ')
+        fun(a)
+
+    </script>
+    
+</body>
+</html>
