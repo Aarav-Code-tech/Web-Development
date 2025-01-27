@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+</head>
+<body>
+    <h1>To Do list</h1>
+    <form id = "a">
+        <input placeholder="Enter your to-do list element" type="text" id="b">
+        <button>Add</button>
+    </form>
+
+    <ul id="list"></ul>
+    <script>
+        var a,b,c;
+        a = document.getElementById("a")
+        b = document.getElementById("b")
+        c = document.getElementById("list")
+        a.addEventListener("submit",
+        function(event){
+            event.preventDefault()
+            fun(b.value)
+        })   
+        function fun(ab){
+            var items = `<li>${ab}
+                <button onclick="erase(this)">Delete</button></li>`
+                c.insertAdjacentHTML("beforeend",items)
+                b.value=""
+                b.focus()
+        } 
+        function erase(abd){
+            abd.parentElement.remove()
+        }
+        </script>
+    
+</body>
+</html>
