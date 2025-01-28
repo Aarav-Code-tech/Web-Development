@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <style>
+        #a{
+            font-size:520%;
+            font-weight: bold;
+            color: white;
+            font-family: monospace;
+        }
+        p{
+            color: white;
+            text-align: center;
+            font-size:320%;
+            font-weight: bold;
+        }
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <p>Clock</p>
+    <br>
+    <br><br><br><br><br>
+    <center><div id = "a" onload="Go()"></div></center>
+    <script>
+        function Go(){
+            var b = new Date()
+            var c = b.getHours()
+            var d = b.getMinutes()
+            var e = b.getSeconds() 
+            var f = "AM"
+            if (c==0){
+                c=12
+                
+            }
+            if (c>12){
+                c=c-12
+                f = "PM"
+            }
+            c=(c<10)? "0"+c:c;
+            d=(d<10)? "0"+d:d;
+            e=(e<10)? "0"+e:e;
+            var g = c+":"+d+":"+e+" "+f
+            document.getElementById("a").innerText=g;
+            setTimeout(Go,1000)
+
+
+        }
+        
+        Go()
+    </script>
+</body>
+</html>
