@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+
+        }
+        h1{
+            font-size: 6ch;
+        }
+        p{
+            font-size: 3.9ch;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>Stopwatch</h1></center>
+    
+    <p><span id = "sec">00</span>:<span id="msec">00</span></p>
+    <button id = "start">Start</button>
+    <button id = "stop">Stop</button>
+    <button id = "reset">Reset</button>
+    <script>
+        window.onload=function(){
+            var secs = 00;
+            var msecs = 00;
+            var appendms = document.getElementById("msec")
+            var appends = document.getElementById("sec")
+            var start = document.getElementById("start")
+            var stop = document.getElementById("stop")
+            var reset = document.getElementById("reset")
+            var interval;
+            start.onclick=function(){
+                clearInterval(interval)
+                interval = setInterval(fun,10)
+
+
+            }
+            stop.onclick=function(){
+                clearInterval(interval)
+            }
+            reset.onclick=function(){
+                clearInterval(interval)
+                msecs="00"
+                secs="00"
+                appendms.innerHTML=msecs
+                appends.innerHTML=secs
+            }
+            function fun(){
+                msecs++
+                if (msecs<=9){
+                    appendms.innerHTML="0"+msecs
+                }
+                if (msecs>9){
+                    appendms.innerHTML=msecs
+                }
+                if (msecs>99){
+                    secs++
+                    appends.innerHTML="0"+secs
+                    msecs=0
+                    appendms.innerHTML="0"+0
+                }
+                if (secs>9){
+                    appends.innerHTML=secs
+                }
+
+            }
+        }
+        
+    </script>
+    
+</body>
+</html>
