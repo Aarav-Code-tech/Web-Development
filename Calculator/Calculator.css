@@ -33,6 +33,34 @@ body{
     cursor:pointer ;
 }
 .operator:hover,.Number:hover,.Empty:hover{
-    font-weight: 1000;
-    font-size: 3ch;
+    font-weight: 600;
+    font-size: 3.5ch;
+}
+button:nth-child(4){
+    background-color: blue;
+}
+button:nth-child(8){
+    background-color: yellowgreen;
+}
+button:nth-child(12){
+    background-color: orangered;
+}
+button:nth-child(16){
+    background-color: darkgreen;
+}
+button:nth-child(20){
+    background-color: darkred;
+}
+#result{
+    height: 110px;
+    color:white;
+}
+#history{
+    text-align: right;
+    height: 20px;
+    padding-top: 20px;
+}
+#output{
+    text-align: right;
+    height: 60px;
 }
