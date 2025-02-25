@@ -63,4 +63,6 @@ button:nth-child(20){
 #output{
     text-align: right;
     height: 60px;
+    color: white;
+    margin: 10px 20px;
 }

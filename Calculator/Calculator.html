@@ -23,26 +23,28 @@
                 </div>
             </div>
             <div id = "c">
-                <button class="operator" id="clear">C</button>
-                <button class="operator" id="del">CE</button>
-                <button class="operator" id="%">%</button>
-                <button class="operator" id="/">÷</button>
-                <button class="Number" id="7">7</button>
-                <button class="Number" id="8">8</button>
-                <button class="Number" id="9">9</button>
-                <button class="operator" id="x">×</button>
-                <button class="Number" id="4">4</button>
-                <button class="Number" id="5">5</button>
-                <button class="Number" id="6">6</button>
-                <button class="operator" id="-">−</button>
-                <button class="Number" id="1">1</button>
-                <button class="Number" id="2">2</button>
-                <button class="Number" id="3">3</button>
-                <button class="operator" id="+">+</button>
+                <button class="operator" onclick="clearr()">C</button>
+                <button class="operator" onclick="erase()">CE</button>
+                <button class="operator" onclick="SetScreen('%')">%</button>
+                <button class="operator" onclick="SetScreen('/')">÷</button>
+                <button class="Number" onclick="SetScreen('7')">7</button>
+                <button class="Number" onclick="SetScreen('8')">8</button>
+                <button class="Number" onclick="SetScreen('9')">9</button>
+                <button class="operator" onclick="SetScreen('*')">×</button>
+                <button class="Number" onclick="SetScreen('4')">4</button>
+                <button class="Number" onclick="SetScreen('5')">5</button>
+                <button class="Number" onclick="SetScreen('6')">6</button>
+                <button class="operator" onclick="SetScreen('-')">−</button>
+                <button class="Number" onclick="SetScreen('1')">1</button>
+                <button class="Number" onclick="SetScreen('2')">2</button>
+                <button class="Number" onclick="SetScreen('3')">3</button>
+                <button class="operator" onclick="SetScreen('+')">+</button>
                 <button class="Empty" id="Empty"></button>
-                <button class="Number" id="0">0</button>
+                <button class="Number" onclick="SetScreen('0')">0</button>
                 <button class="Empty" id="Empty1"></button>
-                <button class="operator" id="=">=</button>
+                <button class="operator" onclick="Calculate()">=</button>
+                
+                
 
 
 
@@ -51,6 +53,6 @@
         </div>
 
     </div>
-    
+    <script src="Calculator.js"></script>
 </body>
 </html>
